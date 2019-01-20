@@ -1,0 +1,32 @@
+.container.pl-0
+    .row
+        nav.navbar.navbar-expand-lg.navbar-dark.container
+            a.navbar-brand.text-uppercase(href='#') 
+                h1 
+                    img(src="/build/img/logo@2x.png", alt="Company Name")
+                    | Company
+                    | 
+                    span.text-success name
+            button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+            #navbarSupportedContent.collapse.navbar-collapse
+                ul.navbar-nav.mr-auto
+                    li.nav-item.dropdown
+                        a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                            | Products
+                        .dropdown-menu(aria-labelledby='navbarDropdown')
+                            a.dropdown-item(href='#') Product 1
+                            a.dropdown-item(href='#') Product 2
+                            .dropdown-divider
+                            a.dropdown-item(href='#') Product 3
+                    li.nav-item
+                        a.nav-link(href='#') News & Events
+                    li.nav-item
+                        a.nav-link(href='#') Support
+                    li.nav-item
+                        a.nav-link(href='#') Contacts
+                ul.navbar-nav.user-nav
+                    li.nav-item
+                        a.nav-link(href='#') Login
+                    li.nav-item
+                        a.nav-link(href='#') Buy Now

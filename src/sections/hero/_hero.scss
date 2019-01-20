@@ -1,0 +1,41 @@
+.hero {
+    padding: 185px 100px 89px;
+    color: #fff;
+    background: $dark-primary url(/build/img/hero_bg@2x.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    @media (max-width: 823px) and (orientation: landscape) {
+        min-height: 100vh;
+    }
+
+    @media (max-width: 823px) {
+        padding: 100px 30px 40px;
+    }
+    
+    &__title {
+        font-size: 48px;
+        font-family: "MyriadPro-Regular", sans-serif;
+        margin-top: 4px;
+        margin-left: 20px;
+        color: #fff;
+        line-height: 1;
+        letter-spacing: 5px;
+        text-align: center;
+
+        @media (max-width: 823px) {
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+    &__subtitle {
+        font-size: 18px;
+        margin-top: 65px;
+        line-height: 30px;
+
+        @media (max-width: 766px) {
+            margin-top: 30px;
+            font-size: 14px
+        }
+    }
+}

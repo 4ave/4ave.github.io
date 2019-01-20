@@ -1,0 +1,18 @@
+mixin one_column(iconSrc, title, description, classOther, linkTitle, linkHref)
+    .col-lg-4.col-md-6
+        .one__column(class=classOther)
+            .one__column_icon.text-center 
+                img(src='/build/img/icon/'+iconSrc+'.png', alt='')
+            h3.one__column_title.text-center= title 
+            .one__column_text= description
+            .one__column_link.text-center
+                a.link.text-primary(href=linkHref)= linkTitle
+
+section.one
+    .container
+        .row.justify-content-center
+            .col-12.text-center
+                .one__title Etiam ac nisl ac quam sodales scelerisque elementum quis purus.
+            +one_column('micro', 'Donec efficitur molestie', 'Nulla pretium nunc in nulla placerat, sit amet porttitor enim ullamcorper. Curabitur ex erat, euismod ac vestibulum vel, viverra non lorem.', 'one', 'Learn More', '#')
+            +one_column('home', 'Mauris interdum venenatis', 'Vivamus cursus ante eu orci rutrum, vitae viverra ante dapibus. Vivamus porta molestie turpis, quis elementum nisi egestas eget.', '', 'Learn More', '#')
+            +one_column('home2', 'Cras sit amet', 'Fusce suscipit, ante at imperdiet vehicula, ex augue feugiat enim, sed faucibus sem tortor quis turpis. Mauris lacinia neque id augue efficitur, ut feugiat massa efficitur.', 'third', 'Learn More', '#')

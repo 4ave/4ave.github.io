@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600|PT+Sans:400,700&subset=cyrillic');
+
+@font-face {
+    font-family: "MyriadPro-Regular";
+    src:    url("/build/fonts/MyriadPro/MyriadPro-Regular.eot?") format("eot"),
+            url("/build/fonts/MyriadPro/MyriadPro-Regular.woff") format("woff"),
+            url("/build/fonts/MyriadPro/MyriadPro-Regular.ttf") format("truetype"),;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    font-size: 22.9px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 16px
+}
+
+a {
+    font-size: 15px;
+}

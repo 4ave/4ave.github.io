@@ -1,0 +1,101 @@
+section {
+    &.third {
+        margin-top: 103px;
+        @media (max-width: 991px) {
+            margin-top: 50px;
+        }
+        .third__title {
+            font-family: 'PT Sans', sans-serif;
+            font-weight: 700;
+            margin-left: 3px;
+            margin-top: 1px;
+            letter-spacing: -.5px;
+        }
+    
+        .third__subtitle,
+        .third__text {
+            font-size: 16px;
+        }
+    
+        .third__subtitle {
+            color: #010101;
+            font-size: 16px;
+            letter-spacing: -.02px;
+            margin-left: 4px;
+            margin-top: 23px;
+        }
+    
+        .third__text {
+            color: #000;
+            font-size: 16px;
+            letter-spacing: -.05px;
+            margin-left: 4px;
+            margin-top: 12px;
+        }
+    
+        .third__icons {
+            ul {
+                margin-top: 24px;
+                margin-left: 33px;
+                margin-bottom: 250px;
+
+                @media (max-width:991px) {
+                    margin: 20px 0 100px;
+                }
+                
+                li { 
+                    &:first-child {
+                        margin-right: 25px;
+                        a {
+                            img {
+                                height: 88px;
+                            }
+                        }
+                    }
+                    &:nth-child(2) {
+                        margin-right: 52px;
+                        a {
+                            img {
+                                height: 94px;
+                            }
+                        }
+                    }
+                    &:nth-child(3) {
+                        margin-right: 52px;
+                        margin-top: 1px;
+                        a {
+                            img {
+                                height: 105px;
+                            }
+                        }
+                    }
+                    &:nth-child(4) {
+                        margin-right: 15px;
+                        a {
+                            img {
+                                height: 99px;
+                            }
+                        }
+                    }
+                    &:last-child {
+                        a {
+                            img {
+                                height: 45px;
+                            }
+                        }
+                    }
+                    @media (max-width:991px) {
+                        display: block;
+                        margin: 20px auto !important;
+
+                        a {
+                            img {
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
